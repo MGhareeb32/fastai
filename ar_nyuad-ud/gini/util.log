@@ -1,0 +1,51 @@
+
+==== READING CORPUS ['ar_nyuad-ud/dev.conllu']
+1,986 sentences loaded.
+Elapsed time = 2.22s
+"أوعر الطريق بالمسافر"
+> VERBroot0 NOUNobj1 ADPcase2! NOUNiobj1
+"قال الرجل أنا شديد المرض و أرسل إلى المدير في العمل معتذرا عن التغيب ثم قام إلى السرير و نام"
+> VERBroot0 NOUNnsubj1 PRONnsubj2! ADJamod1 NOUNnmod:poss2 CCONJcc2! VERBccomp1 ADPcase3! NOUNobj2 ADPcase4! NOUNobj3 ADJamod2 ADPcase4! NOUNobj3 CCONJcc3! VERBccomp2 ADPcase4! NOUNobj3 CCONJcc4! VERBccomp3
+"و غادر كنت مساء الأربعاء المدينة متوجها إلى ولاية أوهايو بعد أن استقل أحد باصات شركة سوني الشهيرة التي تجوب الولايات"
+> CCONJcc1! VERBroot0 PROPNnsubj1 NOUNnmod1 NOUNnmod:poss2 NOUNobj1 ADJamod1 ADPcase3! NOUNobj2 PROPNnmod:poss3 ADVadvmod2 SCONJmark4! VERBccomp3 NOUNobj4 NOUNnmod:poss5 NOUNnmod:poss6 PROPNnmod:poss7 ADJamod7 PRONnmod7 VERBxcomp8 NOUNobj9
+ar_nyuad-ud/gini/png/stages0_.png
+
+==== EXTRACTING RULES FROM 3 SENTENCES = 45 NODES...
+  -1]    nodes_per_sent=15.0    sents_left=_____3
+   0]    nodes_per_sent=_6.0    sents_left=_____2    rule_apply_count=____27    new_rules=_____0    freq_frac=_____8
+   1]    nodes_per_sent=_2.7    sents_left=_____2    rule_apply_count=____10    new_rules=_____0    freq_frac=____32
+   2]    nodes_per_sent=_1.0    sents_left=_____0    rule_apply_count=_____5    new_rules=_____0    freq_frac=___256
+ar_nyuad-ud/gini/png/stages3_.png
+
+TEST#1
+complexity=0
+أوعر الطريق ب المسافر
+complexity=1
+complexity=2
+
+TEST#2
+complexity=0
+معتذرا عن التغيب
+شديد المرض
+و أرسل إلى المدير في العمل
+و نام
+ثم قام إلى السرير
+قال الرجل
+complexity=1
+(و...) (معتذرا...) (ثم...) (و...)
+complexity=2
+(قال...) أنا (شديد...) (و...)
+
+TEST#3
+complexity=0
+مساء الأربعاء
+التي تجوب الولايات
+أن استقل
+متوجها إلى ولاية أوهايو
+و غادر كنت
+شركة سوني الشهيرة
+complexity=1
+بعد (أن...) أحد باصات (شركة...) (التي...)
+(و...) (مساء...) المدينة
+complexity=2
+(و...) (متوجها...) (بعد...)
